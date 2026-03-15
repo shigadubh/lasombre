@@ -183,3 +183,50 @@ footer {
 .btn_buy:hover{
     background-color: #333;
 }
+
+.price-buy {
+    font-size: 24px;
+    font-family: 'Bebas Neue', sans-serif;
+    width: 15%;
+}
+
+.container{
+    width: 90%;
+    align-items: center;
+    display: grid;
+    grid-template-areas:
+    "header header"
+    "imagem descricao"
+    "price-buy btn-buy";
+    grid-template-columns: 1fr 3fr;
+    gap: 50px;
+    margin: 5%;
+    padding: 10px;
+    background-color: dodgerblue;
+}
+.container div.header {
+  grid-area: header;
+  background-color: red;
+}
+.container div.imagem {
+    grid-area: imagem;
+    width: 20%;
+    background-color: yellow;
+    img {
+        object-fit: cover;
+        width: 100%;
+    }
+}
+.container div.descricao {
+    grid-area: descricao;
+    background-color: green;
+}
+.container div.price-buy {
+    grid-area: price-buy;
+    background-color: orange;
+}
+.container div.btn-buy {
+    grid-area: btn-buy;
+    width: 10%;
+    background-color: purple;
+}
