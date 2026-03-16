@@ -9,6 +9,7 @@ document.addEventListener('DOMContentLoaded', function() {
     unlockButton.addEventListener('click', function() {
         if (passwordInput.value === correctPassword) {
             lockScreen.style.display = 'none';
+            document.body.style.overflowY = 'auto';
         } else {
             alert('Incorrect password');
         }

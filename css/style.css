@@ -29,6 +29,7 @@ body {
     width: 100vw;
     height: 350vh;
     overflow-x: hidden;
+    overflow-y: hidden;
     background-color: black;
     color: white;
 }
